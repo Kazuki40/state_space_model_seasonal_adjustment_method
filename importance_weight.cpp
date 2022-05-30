@@ -40,7 +40,7 @@ std::vector<long double>importance_weight::importance_weight_func(std::vector<lo
 	//総和の計算
 	//対数の和を取るための関数accumulate関数
 	//引数は、第1：開始場所、第2：終了場所、第3：初期値、初期値の型が答えなので0.0L(0のlong double 型）
-	this->likelihood = std::accumulate(data_set.begin(), data_set.end(), 0.0L);
+	this->likelihood = std::accumulate(use_data.begin(), use_data.end(), 0.0L);
 
 	//対数尤度の計算
 	this->loglikelihood = std::logl(this->likelihood);
