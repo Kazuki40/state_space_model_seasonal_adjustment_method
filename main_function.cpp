@@ -47,14 +47,14 @@
 #define data_read_file "input/newly_confirmed_cases_daily.csv"
 
 //フィルタ分布の出力フォルダ
-#define data_filter_file "output/ans_filter.csv"
+#define data_filter_file "output/ans_filter1.csv"
 
 //最終の解の出力フォルダ
-#define data_weite_file "output/ans_smoothing.csv"
+#define data_weite_file "output/ans_smoothing1.csv"
 
 //分布形出力ファイル
 #define distribution_file_name_front "output/distribution_"
-#define distribution_file_name_back "_.csv"
+#define distribution_file_name_back "_5.csv"
 
 #define distribution_output false
 //事前に決めるもの↑
@@ -170,7 +170,7 @@ long double main_function(long double sd_random_inital, long double sd_random_in
 	//now_day=0の値
 
 	//x_0
-	rep(loop_i, 1)rep(loop_j, max_particle)now_state_value_xt.at(loop_i).at(loop_j).at(0) = std::abs(random_inital_state(seed_value));
+	rep(loop_i, 2)rep(loop_j, max_particle)now_state_value_xt.at(loop_i).at(loop_j).at(0) = std::abs(random_inital_state(seed_value));
 
 	for (loop_i = 2; loop_i < 8; loop_i++)rep(loop_j, max_particle)now_state_value_xt.at(loop_i).at(loop_j).at(0) = random_inital_state_week(seed_value);
 
