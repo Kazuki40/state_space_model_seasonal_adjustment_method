@@ -39,7 +39,7 @@
 
 //粒子数
 //1以下は計算出来ない
-#define max_particle 100000
+#define max_particle 10000
 //50000-10000-100000 まで
 
 //ファイル名
@@ -47,16 +47,16 @@
 #define data_read_file "input/newly_confirmed_cases_daily.csv"
 
 //フィルタ分布の出力フォルダ
-#define data_filter_file "output/ans_filter1.csv"
+#define data_filter_file "output/ans_filter5.csv"
 
 //最終の解の出力フォルダ
-#define data_weite_file "output/ans_smoothing1.csv"
+#define data_weite_file "output/ans_smoothing5.csv"
 
 //分布形出力ファイル
 #define distribution_file_name_front "output/distribution_"
 #define distribution_file_name_back "_5.csv"
 
-#define distribution_output false
+#define distribution_output true
 //事前に決めるもの↑
 
 //メイン
